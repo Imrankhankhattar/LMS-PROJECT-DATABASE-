@@ -1,0 +1,95 @@
+body {
+    font-family: sans-serif;
+    background-color:white;
+  }
+  
+  .vertical-menu {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+  }
+  
+  .vertical-menu a {
+    display: block;
+    position: relative;
+    padding: 1rem;
+    background-image: linear-gradient(to right, #212529 0%, #212529 50%, #6c757d 50.9999%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+  }
+  
+  .vertical-menu a:hover {
+    background-position: 0% 0%;
+  }
+  
+  .vertical-menu a.active {
+    /* background-image: linear-gradient(to right, #0038A8, #9B4F96, #D60270); */
+    background-image: linear-gradient(to right, #0038A8, #D60270);
+    background-size: 100% 100%;
+    background-position: 0% 0%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  
+  .vertical-menu a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: .875rem;
+    left: .125rem;
+    width: 0;
+    height: 1.5rem;
+    background-color: #0d1ad6;
+    transition: all .2s ease-in-out;
+  }
+  
+  .vertical-menu a:hover::before {
+    width: .25rem;
+    background-color: #212529;
+  }
+  
+  .indicator {
+    display: block;
+    position: absolute;
+    top: .875rem;
+    left: .125rem;
+    width: .375rem;
+    height: 1.5rem;
+    background-color: #0038A8;
+    z-index: 1;
+  }
+  .log{
+      /* padding-left: 1430px; */
+     
+      /* background-color: burlywood; */
+      font-size: 120%;
+      
+  }
+  .log a{
+      text-decoration: none;
+       font-weight: bold;
+       color: black;
+     }
+       
+.log a:hover { 
+      background-color: rgb(18, 207, 192);
+  padding: 4px;
+    }
+  #ad1 {
+  float :right;
+  font-size: 25px;
+  /* padding-right: 30px; */
+  /* border: 2px solid black; */
+  background-color: rgb(153, 182, 129);
+  margin: 20px;
+  }
+  
